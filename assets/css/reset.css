@@ -1,0 +1,104 @@
+/* Modern CSS Reset — Andy Bell
+   https://github.com/andy-bell/modern-css-reset
+*/
+
+:where(html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video) {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+:where(article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section) {
+  display: block;
+}
+
+/* Box sizing rules */
+:where(*, *::before, *::after) {
+  box-sizing: border-box;
+}
+
+/* Root defaults */
+:where(html) {
+  -webkit-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+/* Body defaults */
+:where(body) {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Make images, videos and canvases responsive by default */
+:where(img, picture, video, canvas, svg) {
+  display: block;
+  max-width: 100%;
+}
+
+/* Make form elements inherit font styles */
+:where(input, button, textarea, select) {
+  font: inherit;
+}
+
+/* Remove built-in animations for people who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  :where(html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed,
+  figure, figcaption, footer, header, hgroup,
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video) {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Remove default list styles */
+:where(ol, ul) {
+  list-style: none;
+}
+
+/* Make buttons behave like buttons in all browsers */
+:where(button, [type="button"], [type="reset"], [type="submit"]) {
+  -webkit-appearance: button;
+}
+
+/* Preserve useful defaults for details/summary */
+:where(details) {
+  display: block;
+}
+
+/* Accessibility: visible focus for keyboard users (leave to project to customize) */
+:where(:focus) {
+  outline: max(2px, 0.15rem) solid Highlight;
+  outline-offset: max(2px, 0.15rem);
+}
