@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 28px; 
+    padding: 12px 28px; 
     
    
 }
@@ -40,12 +40,13 @@
 
 .nav-center a:hover,
  .nav-right a:hover{
-    color: #9d08b1;
+    color: #9856EF;
  }
 
  .nav-right img{
     height: 20px;
-    filter: invert(27%) sepia(83%) saturate(7493%) hue-rotate(293deg) brightness(95%) contrast(90%);
+    gap: 48px;
+  filter: invert(34%) sepia(76%) saturate(749%) hue-rotate(221deg) brightness(100%) contrast(90%);
  }
 
  .nav-right a:hover img{

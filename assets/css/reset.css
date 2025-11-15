@@ -90,6 +90,7 @@ footer, header, hgroup, menu, nav, section) {
 /* Make buttons behave like buttons in all browsers */
 :where(button, [type="button"], [type="reset"], [type="submit"]) {
   -webkit-appearance: button;
+  appearance: button;
 }
 
 /* Preserve useful defaults for details/summary */

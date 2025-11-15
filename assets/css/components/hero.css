@@ -51,6 +51,7 @@
     color: #ffffff;
     font-weight: 400;
      padding: 10px 20px;
+     transition: background-color 0.3s ease;
 }
 
 .btn-outline{
@@ -63,12 +64,12 @@
 .btn-filled{
     background-color: #ffffff;
     
-    color: #9d08b1;
+    color: #6329A2;
    
 }
 
 .btn:hover{
-    background-color: #9d08b1;
+    background-color: #9856EF;
     color: #ffffff;
     cursor: pointer;
 }
