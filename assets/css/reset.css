@@ -102,3 +102,7 @@ footer, header, hgroup, menu, nav, section) {
   outline: max(2px, 0.15rem) solid Highlight;
   outline-offset: max(2px, 0.15rem);
 }
+
+a{
+  text-decoration: none;
+}
