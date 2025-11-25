@@ -4,7 +4,7 @@
   top: 60px;
   left: 50%;
   transform: translate(-50%);
-  width: calc(100% - 410px);
+  width: 1260px;
   border-radius: 15px;
   z-index: 999;
   display: flex;
@@ -53,9 +53,11 @@
 
 .nav-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   align-items: center;
+  flex: 1;
+  margin-left: 10rem;
 }
 
 .menu-toggle {
@@ -82,9 +84,9 @@
 
 
 
-@media (max-width: 1540px) {
+@media (max-width: 1280px) {
    .site-header {
-      width: calc(100% - 210px);
+      width: calc(100% - 40px);
    }
 
    .menu-icon {
@@ -144,8 +146,3 @@
    }
 }
 
-@media (max-width: 600px) {
-   .site-header {
-      width: calc(100% - 40px);
-   }
-}
