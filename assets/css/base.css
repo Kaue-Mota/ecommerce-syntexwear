@@ -1,6 +1,12 @@
 body{
     font-family: var(--fonte-principal);
-    background-color: #4b4b4b;
+    background-color: #ffffff;
     color: #333333;
     
+}
+
+main{
+    padding: 2.5rem 0;
+    max-width: 1360px;
+    margin: 0 auto;
 }

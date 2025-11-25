@@ -1,0 +1,80 @@
+.card {
+  background-size: cover;
+  background-position: calc(20%);
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.destaque {
+  grid-area: destaque;
+  background-image: url(../../img/banners/hero.jpg);
+}
+
+.top2 {
+  grid-area: top2;
+  background-image: url(../../img/products/roxo-verde-grid.jpg);
+}
+
+.midL {
+  grid-area: midL;
+
+  background-image: url(../../img/products/modelo-feminino.png);
+}
+
+.midR {
+  grid-area: midR;
+
+  background-image: url(../../img/products/futurista-grid.png);
+}
+
+.bottomL {
+  grid-area: bottomL;
+  background-image: url(../../img/products/preto-azul-grid.jpg);
+}
+
+.bottomR {
+  grid-area: bottomR;
+  background-image: url(../../img/products/moderno-grid.png);
+}
+
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 300px);
+  grid-template-areas:
+    "destaque destaque  top2  top2"
+    "destaque destaque  midL  midR"
+    "bottomL bottomL    midL  bottomR";
+  gap: 30px;
+}
+
+.destaque-content {
+    color: #ffffff;
+  position: absolute;
+  left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.card-title {
+    font-family: var(--fonte-principal);
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.card-subtitle {
+    font-family: var(--fonte-principal);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.cta-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}

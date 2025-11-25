@@ -1,9 +1,10 @@
 .hero-section {
     background: url(../../img/banners/hero.jpg) no-repeat center;
     background-size: cover;
-
+    border-radius: 20px;
     height: 500px;
     position: relative;
+    
 }
 
 .hero-overlay{
@@ -69,7 +70,8 @@
 }
 
 .btn:hover{
-    background-color: #9856EF;
+    background-color: #6329A2;
     color: #ffffff;
+    border-color: #6329A2;
     cursor: pointer;
 }
