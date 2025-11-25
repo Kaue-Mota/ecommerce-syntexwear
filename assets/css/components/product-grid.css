@@ -78,3 +78,46 @@
     gap: 10px;
     justify-content: center;
 }
+
+@media (max-width: 768px) {
+  .grid-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "destaque destaque"
+      "bottomL bottomL"
+      "midL midR"
+      "midL bottomR"
+      "top2 top2";
+
+      max-width: 100%;
+      gap: 0.625rem;
+  }
+
+.destaque {
+    height: 500px;
+}
+
+.top2 {
+  height: 200px;
+}
+
+.midL {
+ height: 371px;
+}
+
+.midR {
+  height: 180px;
+}
+
+.bottomL {
+  height: 200px;
+}
+
+.bottomR {
+ height: 180px;
+}
+
+
+}
